@@ -35,6 +35,7 @@ app.post("/", function(req,res){
         const imageURL = "http://openweathermap.org/img/wn/"+ icon + "@2x.png"
         res.write("<h1>The current temp in " + query +" is: " + temp +"<br>" + "The description: " + description +"<br>" + "Feels like temperature: " + feels_like +"&#8451;"+"</h1>" );
         res.write("<img src=" + imageURL + ">");
+        res.write("<p> &copy; The Official Piyush Gupta</p>")
         res.send();
       })
     })
